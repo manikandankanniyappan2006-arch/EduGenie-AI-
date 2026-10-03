@@ -1,0 +1,28 @@
+{
+  "name": "edugenie-ai",
+  "version": "1.0.0",
+  "description": "A web application for generating educational content using the Gemini API.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "education",
+    "AI",
+    "Gemini"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "typescript": "latest"
+  }
+}

@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --primary: #4f46e5;
+    --primary-dark: #3730a3;
+
+    --background: #f5f7fb;
+
+    --card: #ffffff;
+
+    --text: #172033;
+
+    --muted: #687386;
+
+    --border: #dce1eb;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        var(--background);
+
+    color:
+        var(--text);
+
+}
+
+
+.container {
+
+    width:
+        min(1100px, calc(100% - 32px));
+
+    margin:
+        auto;
+
+}
+
+
+/* --------------------------
+   HEADER
+-------------------------- */
+
+.hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            #312e81,
+            #4f46e5,
+            #7c3aed
+        );
+
+    color:
+        white;
+
+    padding:
+        55px 20px 90px;
+
+}
+
+
+.brand {
+
+    font-size:
+        22px;
+
+    font-weight:
+        bold;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(32px, 5vw, 58px);
+
+    margin:
+        0 0 15px;
+
+    max-width:
+        850px;
+
+}
+
+
+.hero p {
+
+    font-size:
+        18px;
+
+    line-height:
+        1.6;
+
+    max-width:
+        750px;
+
+    opacity:
+        0.9;
+
+}
+
+
+/* --------------------------
+   APP
+-------------------------- */
+
+.app-container {
+
+    margin-top:
+        -45px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        25px;
+
+    padding-bottom:
+        50px;
+
+}
+
+
+.card {
+
+    background:
+        var(--card);
+
+    border-radius:
+        20px;
+
+    padding:
+        25px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+.card h2 {
+
+    margin-top:
+        0;
+
+}
+
+
+/* --------------------------
+   FORM
+-------------------------- */
+
+label {
+
+    display:
+        block;
+
+    font-weight:
+        bold;
+
+    margin:
+        18px 0 8px;
+
+}
+
+
+select,
+textarea {
+
+    width:
+        100%;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        12px;
+
+    padding:
+        13px;
+
+    font-size:
+        15px;
+
+    font-family:
+        inherit;
+
+    background:
+        white;
+
+}
+
+
+textarea {
+
+    resize:
+        vertical;
+
+    min-height:
+        190px;
+
+}
+
+
+select:focus,
+textarea:focus {
+
+    outline:
+        3px solid
+        rgba(79, 70, 229, 0.15);
+
+    border-color:
+        var(--primary);
+
+}
+
+
+/* --------------------------
+   BUTTONS
+-------------------------- */
+
+.buttons {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    margin-top:
+        18px;
+
+}
+
+
+button {
+
+    border:
+        none;
+
+    border-radius:
+        10px;
+
+    padding:
+        12px 20px;
+
+    font-size:
+        15px;
+
+    font-weight:
+        bold;
+
+    cursor:
+        pointer;
+
+    background:
+        var(--primary);
+
+    color:
+        white;
+
+}
+
+
+button:hover {
+
+    background:
+        var(--primary-dark);
+
+}
+
+
+button:disabled {
+
+    opacity:
+        0.6;
+
+    cursor:
+        wait;
+
+}
+
+
+.secondary,
+.copy-button {
+
+    background:
+        #eef0f6;
+
+    color:
+        #30384b;
+
+}
+
+
+.secondary:hover,
+.copy-button:hover {
+
+    background:
+        #dfe3ec;
+
+}
+
+
+/* --------------------------
+   RESULT
+-------------------------- */
+
+.result-card {
+
+    min-height:
+        450px;
+
+}
+
+
+.result-header {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+}
+
+
+.result-header h2 {
+
+    margin:
+        0;
+
+}
+
+
+.result {
+
+    margin-top:
+        20px;
+
+    padding:
+        20px;
+
+    background:
+        #fafbfe;
+
+    border:
+        1px solid #edf0f5;
+
+    border-radius:
+        14px;
+
+    min-height:
+        330px;
+
+    line-height:
+        1.7;
+
+    white-space:
+        pre-wrap;
+
+    overflow-wrap:
+        anywhere;
+
+}
+
+
+/* --------------------------
+   QUIZ
+-------------------------- */
+
+.quiz-question {
+
+    border-top:
+        1px solid #e2e6ef;
+
+    padding:
+        20px 0;
+
+}
+
+
+.quiz-question:first-child {
+
+    border-top:
+        none;
+
+    padding-top:
+        0;
+
+}
+
+
+.quiz-options button {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    text-align:
+        left;
+
+    margin:
+        9px 0;
+
+    background:
+        white;
+
+    color:
+        #293246;
+
+    border:
+        1px solid #d8deea;
+
+}
+
+
+.quiz-options button:hover {
+
+    background:
+        #f4f5ff;
+
+}
+
+
+.quiz-options button.correct {
+
+    border-color:
+        #16a34a;
+
+    background:
+        #dcfce7;
+
+}
+
+
+.quiz-options button.wrong {
+
+    border-color:
+        #dc2626;
+
+    background:
+        #fee2e2;
+
+}
+
+
+/* --------------------------
+   STATUS
+-------------------------- */
+
+.status {
+
+    min-height:
+        25px;
+
+    margin-top:
+        10px;
+
+    color:
+        var(--muted);
+
+}
+
+
+/* --------------------------
+   HIDDEN
+-------------------------- */
+
+.hidden {
+
+    display:
+        none;
+
+}
+
+
+/* --------------------------
+   FOOTER
+-------------------------- */
+
+footer {
+
+    text-align:
+        center;
+
+    padding:
+        30px;
+
+    color:
+        var(--muted);
+
+}
+
+
+/* --------------------------
+   MOBILE
+-------------------------- */
+
+@media (max-width: 800px) {
+
+    .app-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .hero {
+
+        padding:
+            40px 20px 75px;
+
+    }
+
+
+    .buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    button {
+
+        width:
+            100%;
+
+    }
+
+}
